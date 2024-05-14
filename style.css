@@ -9,23 +9,21 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  padding-top: 60px;
+  box-sizing: border-box;
 }
 
 .container {
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   background-color: #e0fbe2;
+  padding: 10px 100px;
 }
 
 .navbar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -33,6 +31,7 @@ body {
   background-color: #ace1af;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   color: #394149;
+  width: 100%;
 }
 
 .nav-brand {
@@ -59,6 +58,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: white;
+  margin: 40px 0;
   padding: 10px 20px;
   border-radius: 8px;
   box-shadow: 2px 2px 1px #ace1af;
@@ -269,9 +269,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .nav-menu {
-    display: none;
-  }
+
   .form-content {
     width: 300px;
   }
