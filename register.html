@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav-brand">
+          <img class="nav-brand-logo" src="brand.svg" alt="logo" />
+          VideoBelajar
+        </div>
+        <div class="nav-menu"></div>
+      </nav>
+
+      <div class="form-container">
+        <form action="#" class="form-content">
+          <h2>Pendaftaran Akun</h2>
+          <p>Yuk, daftarkan akunmu sekarang juga!</p>
+          <div class="input-form">
+            <label for="email"
+              >Nama Lengkap<span style="color: red">*</span></label
+            >
+            <input type="text" name="fullname" id="fullname" />
+          </div>
+          <div class="input-form">
+            <label for="email">E-Mail<span style="color: red">*</span></label>
+            <input type="email" name="email" id="email" />
+          </div>
+
+          <div class="input-form-phone">
+            <label for="phone"
+              >Nomor Handphone<span style="color: red">*</span></label
+            >
+            <div class="input-phone-field">
+              <select
+                title="country-code"
+                name="country-code"
+                id="country-code"
+              >
+                <option value="+62">+62</option>
+                <option value="+60">+60</option>
+                <option value="+673">+673</option>
+                <option value="+65">+65</option>
+              </select>
+              <input type="text" name="phone" id="phone" />
+            </div>
+          </div>
+
+          <div class="input-form">
+            <label for="password"
+              >Kata Sandi<span style="color: red">*</span></label
+            >
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="input-form">
+            <label for="cfm-password"
+              >Konfirmasi Kata Sandi<span style="color: red">*</span></label
+            >
+            <input type="password" name="cfm-password" id="cfm-password" />
+          </div>
+          <button type="submit" class="btn-primary">Daftar</button>
+          <button href="login.html" type="button" class="btn-secondary">
+            Masuk
+          </button>
+
+          <div class="divider">atau</div>
+          <button type="button" class="google-signin-btn">
+            <img src="search.png" alt="google" />
+            Daftar dengan Google
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

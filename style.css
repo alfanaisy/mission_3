@@ -10,6 +10,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  padding-top: 60px;
 }
 
 .container {
@@ -18,7 +19,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #e0fbe2;
-  padding: 60px;
 }
 
 .navbar {
@@ -53,7 +53,7 @@ body {
   margin: 0 50px;
 }
 
-.login-form-container {
+.form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,7 +64,7 @@ body {
   box-shadow: 2px 2px 1px #ace1af;
 }
 
-.login-form {
+.form-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,11 +72,11 @@ body {
   width: 500px;
 }
 
-.login-form h2 {
+.form-content h2 {
   margin-bottom: 0;
 }
 
-.login-form p {
+.form-content p {
   font-size: 12px;
   color: grey;
 }
@@ -117,7 +117,7 @@ body {
   text-decoration: underline;
 }
 
-.login-btn {
+.btn-primary {
   background-color: #ace1af;
   width: 100%;
   padding: 10px 10px;
@@ -130,20 +130,20 @@ body {
   cursor: pointer;
 }
 
-.login-btn:hover {
+.btn-primary:hover {
   opacity: 0.8;
 }
 
-.login-btn:active {
+.btn-primary:active {
   opacity: 0.4;
 }
 
-.login-btn:focus {
+.btn-primary:focus {
   outline: solid 1px #ace1af;
   transition: none;
 }
 
-.daftar-btn {
+.btn-secondary {
   background-color: #e0fbe2;
   width: 100%;
   padding: 10px 10px;
@@ -154,15 +154,17 @@ body {
   font-weight: 700;
   transition: opacity 0.2s, outline 0.15s;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
 }
 
-.daftar-btn:hover {
+.btn-secondary:hover {
   outline: solid 1px #ace1af;
 }
-.daftar-btn:active {
+.btn-secondary:active {
   opacity: 0.4;
 }
-.daftar-btn:focus {
+.btn-secondary:focus {
   outline: solid 2px #ace1af;
   transition: none;
 }
@@ -189,7 +191,7 @@ body {
   margin-left: 0.55em;
 }
 
-.google-btn {
+.google-signin-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -207,13 +209,58 @@ body {
   cursor: pointer;
   margin-bottom: 10px;
 }
-.google-btn:hover {
+.google-signin-btn:hover {
   background-color: #e0fbe2;
 }
 
-.google-btn img {
+.google-signin-btn img {
   width: 18px;
   margin-right: 6px;
+}
+
+.input-form-phone {
+  display: flex;
+  align-items: start;
+  width: 100%;
+  flex-direction: column;
+}
+
+.input-form-phone label {
+  font-size: 12px;
+  color: grey;
+  margin-bottom: 5px;
+}
+
+.input-phone-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.input-phone-field select {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.input-phone-field input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  flex: 1;
+}
+
+.input-phone-field input:focus {
+  outline-width: 1px;
+  outline-color: #bff6c3;
+}
+.input-phone-field select:focus {
+  outline-width: 1px;
+  outline-color: #bff6c3;
 }
 
 @media screen and (max-width: 640px) {
@@ -225,7 +272,7 @@ body {
   .nav-menu {
     display: none;
   }
-  .login-form {
+  .form-content {
     width: 300px;
   }
 }

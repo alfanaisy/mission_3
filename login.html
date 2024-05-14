@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="style.css" />
-    <style></style>
   </head>
   <body>
     <div class="container">
@@ -17,8 +16,8 @@
         <div class="nav-menu"></div>
       </nav>
 
-      <div class="login-form-container">
-        <form action="#" class="login-form">
+      <div class="form-container">
+        <form action="#" class="form-content">
           <h2>Masuk ke Akun</h2>
           <p>Yuk, lanjutin belajarmu di videobelajar.</p>
           <div class="input-form">
@@ -27,16 +26,18 @@
           </div>
           <div class="input-form">
             <label for="password"
-              >Password<span style="color: red">*</span></label
+              >Kata Sandi<span style="color: red">*</span></label
             >
             <input type="password" name="password" id="password" />
           </div>
           <p class="forgot-password">Lupa Password?</p>
-          <button type="submit" class="login-btn">Masuk</button>
-          <button type="button" class="daftar-btn">Daftar</button>
+          <button type="submit" class="btn-primary">Masuk</button>
+          <button href="register.html" type="button" class="btn-secondary">
+            Daftar
+          </button>
 
           <div class="divider">atau</div>
-          <button type="button" class="google-btn">
+          <button type="button" class="google-signin-btn">
             <img src="search.png" alt="google" />
             Masuk dengan Google
           </button>
