@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .google-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        background-color: white;
+        width: 100%;
+        padding: 10px 10px;
+        color: #7dae7f;
+        border: none;
+        border-radius: 24px;
+        margin-top: 10px;
+        font-weight: 700;
+        outline: solid 1px #ace1af;
+        transition: background-color 0.15s;
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+      .google-btn:hover {
+        background-color: #e0fbe2;
+      }
+
+      .google-btn img {
+        width: 18px;
+        margin-right: 6px;
+      }
+
+      @media screen and (max-width: 640px) {
+        .navbar {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .nav-menu {
+          display: none;
+        }
+        .login-form {
+          width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav-brand">
+          <img class="nav-brand-logo" src="brand.svg" alt="logo" />
+          VideoBelajar
+        </div>
+        <div class="nav-menu"></div>
+      </nav>
+
+      <div class="login-form-container">
+        <form action="#" class="login-form">
+          <h2>Masuk ke Akun</h2>
+          <p>Yuk, lanjutin belajarmu di videobelajar.</p>
+          <div class="input-form">
+            <label for="email">E-Mail<span style="color: red">*</span></label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="input-form">
+            <label for="password"
+              >Password<span style="color: red">*</span></label
+            >
+            <input type="password" name="password" id="password" />
+          </div>
+          <p class="forgot-password">Lupa Password?</p>
+          <button type="submit" class="login-btn">Masuk</button>
+          <button type="button" class="daftar-btn">Daftar</button>
+
+          <div class="divider">atau</div>
+          <button type="button" class="google-btn">
+            <img src="search.png" alt="google" />
+            Masuk dengan Google
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
