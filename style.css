@@ -266,7 +266,7 @@ body {
 @media screen and (max-width: 640px) {
   .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 
